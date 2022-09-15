@@ -22,6 +22,8 @@ function ToyCard({ toy, onDeleteToy, onUpdateToy }) {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Credentials": true
       },
       body: JSON.stringify(updateObj),
     })
